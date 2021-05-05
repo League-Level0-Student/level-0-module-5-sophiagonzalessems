@@ -8,9 +8,22 @@ public class primeornot1 {
 public static void main(String[] args) {
 
 	String prime=JOptionPane.showInputDialog("Choose a number.");
-	if(test.equals)
+	int num=Integer.parseInt(prime);
+	boolean isprime=true;
+	for(int i=2; i<num;i++) {
+		if (num%i==0) {
+			isprime=false;
+			break;
+		}
+		
+	}
+	if(isprime) {
+	JOptionPane.showMessageDialog(null,"Your number is prime");
+	}
 	
-	
+	else {
+		JOptionPane.showMessageDialog(null,"Your number is not prime");
+	}
 	
 	
 	
